@@ -1,0 +1,363 @@
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Carrusel principal */
+.carrusel-portafolio .carousel-item img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+/* Capa oscura sobre las imágenes */
+.carrusel-portafolio .carousel-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    pointer-events: none;
+}
+
+/* Texto sobre las imágenes */
+.carrusel-portafolio .carousel-caption {
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Títulos */
+.carrusel-portafolio h1,
+.carrusel-portafolio h2 {
+    font-size: 2.8rem;
+    color: white;
+}
+
+/* Descripciones */
+.carrusel-portafolio p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    max-width: 650px;
+}
+
+/* Botones */
+.carrusel-portafolio .btn {
+    border-radius: 25px;
+    padding: 10px 25px;
+}
+
+/* Diseño para celulares */
+@media (max-width: 576px) {
+
+    .carrusel-portafolio .carousel-item img {
+        height: 420px;
+    }
+
+    .carrusel-portafolio h1,
+    .carrusel-portafolio h2 {
+        font-size: 1.7rem;
+    }
+
+    .carrusel-portafolio p {
+        font-size: 0.95rem;
+    }
+
+    .carrusel-portafolio .btn {
+        font-size: 0.85rem;
+        padding: 8px 15px;
+    }
+}
+
+/* ==========================
+   SECCIÓN SOBRE MÍ
+========================== */
+
+#sobre-mi {
+    background-color: #f8f9fa;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Títulos */
+#sobre-mi h2 {
+    color: #212529;
+    font-size: 2.3rem;
+}
+
+/* Párrafos */
+#sobre-mi p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Tarjeta del perfil */
+.tarjeta-perfil {
+    background-color: #e9f2ff;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-perfil:hover {
+    transform: translateY(-5px);
+}
+
+/* Icono principal */
+.icono-perfil {
+    font-size: 85px;
+    color: #0d6efd;
+}
+
+/* Diseño para celulares */
+@media (max-width: 576px) {
+
+    #sobre-mi {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #sobre-mi h2 {
+        font-size: 1.8rem;
+    }
+
+    .icono-perfil {
+        font-size: 65px;
+    }
+}
+
+/* ==========================
+   SECCIÓN MIS PROYECTOS
+========================== */
+
+#proyectos {
+    background-color: #ffffff;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Título de la sección */
+#proyectos h2 {
+    color: #212529;
+    font-size: 2.3rem;
+}
+
+/* Diseño de las tarjetas */
+.tarjeta-proyecto {
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Imágenes */
+.tarjeta-proyecto .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Contenido */
+.tarjeta-proyecto .card-body {
+    padding: 25px;
+}
+
+.tarjeta-proyecto .card-title {
+    color: #174a91;
+    font-size: 1.3rem;
+}
+
+.tarjeta-proyecto .card-text {
+    line-height: 1.7;
+}
+
+/* Botones */
+.tarjeta-proyecto .btn {
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* Diseño para celulares */
+@media (max-width: 576px) {
+
+    #proyectos h2 {
+        font-size: 1.8rem;
+    }
+
+    .tarjeta-proyecto .card-img-top {
+        height: 200px;
+    }
+
+    .tarjeta-proyecto .card-body {
+        padding: 20px;
+    }
+}
+
+/* ==========================
+   SECCIÓN CONTACTO
+========================== */
+
+.seccion-contacto {
+    background-color: #f5f8fc;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Título principal */
+#contacto h2 {
+    color: #212529;
+    font-size: 2.3rem;
+}
+
+/* Tarjeta informativa */
+.tarjeta-contacto {
+    background-color: #e9f2ff;
+    border-radius: 15px;
+}
+
+.tarjeta-contacto h3 {
+    color: #174a91;
+}
+
+.tarjeta-contacto p {
+    line-height: 1.7;
+}
+
+/* Icono de contacto */
+.icono-contacto {
+    font-size: 60px;
+    color: #0d6efd;
+}
+
+/* Formulario */
+.formulario-contacto {
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+/* Campos */
+.formulario-contacto .form-control,
+.formulario-contacto .form-select {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Campos seleccionados */
+.formulario-contacto .form-control:focus,
+.formulario-contacto .form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.25);
+}
+
+/* Botones */
+.formulario-contacto .btn {
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+/* Diseño para celulares */
+@media (max-width: 576px) {
+
+    #contacto h2 {
+        font-size: 1.8rem;
+    }
+
+    .formulario-contacto .card-body {
+        padding: 20px !important;
+    }
+
+    .icono-contacto {
+        font-size: 45px;
+    }
+}
+
+/* ==========================
+   FOOTER / PIE DE PÁGINA
+========================== */
+
+/* Fondo del footer */
+.pie-pagina {
+    background-color: #14263f;
+}
+
+/* Párrafos */
+.pie-pagina p {
+    color: #d6e2f1;
+    line-height: 1.7;
+}
+
+/* Títulos */
+.pie-pagina h3 {
+    color: #ffffff;
+}
+
+/* Enlaces */
+.enlace-footer {
+    color: #d6e2f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Efecto del mouse y teclado */
+.enlace-footer:hover,
+.enlace-footer:focus-visible {
+    color: #8ed8ff;
+    text-decoration: underline;
+}
+
+/* ==========================
+   AJUSTES GENERALES
+========================== */
+
+/* Desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evita que el menú tape los títulos */
+section[id] {
+    scroll-margin-top: 80px;
+}
+
+/* Respeta preferencias de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Diseño en celulares */
+@media (max-width: 576px) {
+
+    .pie-pagina {
+        text-align: left;
+    }
+
+    .pie-pagina p {
+        font-size: 0.9rem;
+    }
+
+    .pie-pagina h3 {
+        font-size: 1rem;
+    }
+
+}
